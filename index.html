@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Cart App</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewed Awakening</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div class="logo">ShopEasy</div>
-      <ul class="nav-links">
-        <li><a href="#">Mobiles</a></li>
-        <li><a href="#">Laptops</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-      <div class="cart-icon" id="cart-icon">
-        🛒 <span id="cart-count">0</span>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main Content: Product List -->
-  <main>
-    <section class="product-list">
-      <h2>Products</h2>
-      <div class="products" id="product-container">
-        <!-- Products will be dynamically inserted here -->
-      </div>
+    <header>
+        <div class="logo">Brewed Awakening</div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Brewed Awakening</h1>
+        <p>Your perfect cup of coffee awaits.</p>
+        <a href="#menu" class="cta-button">View Menu</a>
     </section>
-  </main>
 
-  <!-- Cart Panel -->
-  <aside class="cart-panel" id="cart-panel">
-    <div class="cart-header">
-      <h3>Your Cart</h3>
-      <button id="close-cart">X</button>
-    </div>
-    <div class="cart-items" id="cart-items">
-      <!-- Cart items will be dynamically inserted here -->
-    </div>
-    <div class="cart-footer">
-      <p>Total: $<span id="cart-total">0.00</span></p>
-      <button id="empty-cart">Empty Cart</button>
-    </div>
-  </aside>
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="expresseo.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Strong and bold espresso shot.</p>
+                <span>$3.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Creamy milk with rich espresso.</p>
+                <span>$4.50</span>
+            </div> 
+            <div class="menu-item">
+                <img src="cappacunio.jpg" alt="capaccino">
+                <h3>cappacunio</h3>
+                <p>Creamy milk with rich espresso.</p>
+                <span>$4.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="pancake.jpg" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <p>Fluffy pancakes with maple syrup.</p>
+                <span>$6.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="croissants.jpg" alt="croissants">
+                <h3>croissants</h3>
+                <p> French pastry in a crescent shape similar to puff pastry.</p>
+                <span>$4.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="donut.jpg" alt="donut">
+                <h3>donut</h3>
+                <p>a sweet, fried, ring-shaped pastry that's often covered in icing.</p>
+                <span>$4.50</span>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Brewed Awakening, we believe in serving the finest coffee and breakfast items in a warm and welcoming environment. Our journey started with a passion for great flavors and an amazing coffee experience.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Brewed Awakening. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
